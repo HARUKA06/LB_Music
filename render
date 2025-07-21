@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: Haruka-music-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: API_HASH
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_URL
+        sync: false
+      - key: ASSISTANT_SESSION
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: DOWNLOAD_API_URL
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: MongoDB_url
+        sync: false
+      - key: ASSISTANT_USERNAME
+        sync: false
+      - key: ASSISTANT_CHAT_ID
+        sync: false
